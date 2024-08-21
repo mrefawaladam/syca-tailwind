@@ -1,0 +1,10 @@
+.bacground-gradient {
+    background-image: url('../images/bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-warning {
+    --tw-text-opacity: 1;
+    color: rgb(244 209 81 / var(--tw-text-opacity));
+}

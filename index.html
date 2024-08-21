@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="assets/css/style.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Swiffy Slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+   <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+<body class="font-['Montserrat'] bacground-gradient">
+  
+  <!-- Header -->
+  <header class="absolute top-0 left-0 z-10 flex items-center w-full px-5 mb-10 bg-transparent lg:p-0">
+    <div class="container mx-auto">
+      <div class="relative flex items-center justify-between">
+        <div class="px-4">
+          <a href="#" class="block py-6 text-lg font-bold text-primary">
+            <img src="https://startyourcontentacademy.com/assets/img/logo-dark.svg" alt="Logo">
+          </a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+            <span class="transition duration-300 origin-top-left hamburger-line"></span>
+            <span class="transition duration-300 hamburger-line"></span>
+            <span class="transition duration-300 origin-bottom-left hamburger-line"></span>
+          </button>
+          <nav id="nav-menu" class="absolute hidden py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary font-bold outline-emerald-700">Menu</a>
+              </li>
+              <!-- Additional Menu Items -->
+              <li class="group">
+                <a href="#" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary outline-emerald-700">Menu</a>
+              </li>
+              <li class="group">
+                <a href="#" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary outline-emerald-700">Menu</a>
+              </li>
+              <li class="group">
+                <a href="#" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary outline-emerald-700">Menu</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hidden px-4 lg:block">
+          <button class="flex items-center justify-center gap-2 px-8 py-4 rounded-tl-lg rounded-br-lg rounded-tr-lg rounded-bl-lg bg-[#49b5a5] max-w-[112px]">
+          <span class="text-white text-lg font-bold font-['Montserrat',_sans-serif]">
+            Login
+          </span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="hero" class="mt-20">
+    <div class="container mx-auto">
+        <div class="lg:pt-12">
+            <h1 class="text-center font-bold leading-[29.26px] sm:text-[24px] md:text-[40px] lg:text-[40px] lg:leading-[48.76px] 2xl:text-[48px] 2xl:leading-[58.51px]">
+                Buat kamu yang belum jadi member,<br>
+                hari ini ada Kesempatan Eksklusif...
+            </h1>
+            <h3 class="mt-3 text-center leading-[19px] sm:text-[16px] md:text-[24px] lg:text-[24px] lg:leading-[24.38px] 2xl:text-[24px] 2xl:leading-[29.26px]">
+                <span class="text-[#333333] font-['Montserrat',_sans-serif]">Dapatkan</span>
+                <span class="text-[#333333] font-bold font-['Montserrat',_sans-serif]">Diskon 70% Course Affiliate ini jadi hanya 99 Ribu</span>
+                <span class="text-[#333333] font-['Montserrat',_sans-serif]">dengan ambil</span>
+                <span class="text-[#333333] font-bold font-['Montserrat',_sans-serif]">bareng paket Course IG</span>
+                <span class="text-[#333333] font-['Montserrat',_sans-serif]">sekaligus (Akses Seumur Hidup)</span>
+            </h3>
+        </div>
+    </div>
+</section>
+
+<section class="py-10">
+    <div class="container mx-auto px-4">
+        <h3 class="mb-8 text-center leading-[19px] sm:text-[16px] md:text-[24px] lg:text-[24px] lg:leading-[24.38px] 2xl:text-[24px] 2xl:leading-[29.26px]">
+            <span class="text-[#333333] font-['Montserrat',_sans-serif]">Course IG aksesnya seumur hidup, plus</span>
+            <span class="text-[#333333] font-bold font-['Montserrat',_sans-serif]">kamu akan dapetin ini semua ini:</span>
+        </h3>
+        
+        <div class="flex flex-wrap justify-center gap-2 lg:gap-7">
+            <div class="border border-[#49B5A5] border-[4px] rounded-[28.96px] shadow-lg w-full max-w-[688px] lg:max-w-[696px] p-4 bg-white">
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>50+ Video Materi yang akan terus diupdate seiring ada Strategi/Fitur BARU <span class="font-bold text-[#49B5A5]">tanpa perlu bayar lagi</span></p>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>Kesempatan Eksklusif <span class="font-bold text-[#49B5A5]">DIREVIEW AKUNMU</span> oleh team Expert di Live Review Akun 1-2x/bulan</p>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>Akses <span class="font-bold text-[#49B5A5]">Tanya2 di Exclusive Community</span> (bisa bertanya, dibimbing langsung + networking)</p>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>Akses <span class="font-bold text-[#49B5A5]">Info Tren Konten yang lagi Naik</span> yang diupdate SETIAP PAGI, supaya kamu ga ketinggalan</p>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>Bonus Modul <span class="font-bold text-[#49B5A5]">Editing Modal HP</span> Buat Pemula (Design + Video)</p>
+                    </li>
+                    <li class="flex items-start space-x-2">
+                        <svg class="w-6 h-6 text-[#49B5A5]" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p>Bonus Modul <span class="font-bold text-[#49B5A5]">Editing</span> (Design + Video)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="flex justify-center items-center">
+    <div class="w-full flex flex-col items-center">
+        <div class="relative flex flex-col items-center justify-center w-full px-0 py-[20px] max-w-[936px]">
+            <img src="assets/images/image 1.png" alt="rectangle" width="696" height="392" class="w-full h-auto max-w-[696px]" />
+            <div class="relative flex flex-col items-center justify-center w-full max-w-[936px] gap-[10px]">
+                <div class="w-full text-center mb-0 mt-0 min-h-[auto]">
+                    <p class="text-[#333333] text-center font-bold text-[24px] sm:text-[24px] md:text-[40px] lg:text-[40px] leading-[50px] font-['Montserrat',_sans-serif]">
+                        Spesial buat kamu yang beli Course Affiliate tidak perlu bayar senilai:
+                    </p>
+                </div>
+                <div class="w-full text-center mb-0 mt-0 min-h-[auto]">
+                    <p class="text-[#808080] text-[64px] font-bold leading-[80px] line-through font-['Montserrat',_sans-serif]">
+                        Rp 298,000
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="flex justify-center items-center mx-auto mt-20">
+  <div class="container lg:max-w-[1000px] md:max-w-[936px] sm:max-w-[688px] flex flex-col items-center justify-center p-[40px] gap-[40px] box-border bg-[#ffffff] rounded-[40px] shadow-[0px_5px_25px_0px_rgba(0,0,0,0.2)]">
+      <div>
+          <div class="flex flex-col items-center gap-[10px]">
+              <div class="text-center text-[40px] font-bold text-[#333333] font-['Montserrat',_sans-serif]">Cukup tambah</div>
+              <div class="text-center text-[64px] font-bold text-[#fb8e7e] font-['Montserrat',_sans-serif]">Rp 99,000</div>
+          </div>
+          <div class="text-center text-[24px] font-bold font-['Montserrat',_sans-serif]">
+              <span class="text-[#333333]">sudah dapat</span>
+              <span class="text-[#49b5a5]">Akses Seumur Hidup</span>
+              <span class="text-[#333333]">ke 2 Course (IG + Affiliate)</span>
+          </div>
+      </div>
+      <div class="w-full max-w-[696px] flex flex-col items-center gap-[20px]">
+          <button class="w-full flex items-center justify-center gap-[8px] p-[16px_32px] bg-[#f2cf59] rounded-[999px] text-[24px] font-bold text-[#333333] font-['Montserrat',_sans-serif]">
+              Ambil Penawaran Spesial! (397K)
+          </button>
+          <div class="w-full flex flex-col md:flex-row justify-center gap-[20px]">
+              <button class="flex items-center justify-center gap-[8px] p-[16px_32px] border border-[#49b5a5] rounded-[999px] text-[16px] font-bold text-[#49b5a5] font-['Montserrat',_sans-serif]">
+                  Course Affiliate Saja (298K)
+              </button>
+              <button class="flex items-center justify-center gap-[8px] p-[16px_32px] border border-[#49b5a5] rounded-[999px] text-[16px] font-bold text-[#49b5a5] font-['Montserrat',_sans-serif]">
+                  Course SYCA Saja (298K)
+              </button>
+          </div>
+      </div>
+      <div class="container mx-auto text-center">
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="lg:w-1/3  lgmdw-1/3 p-4 sm:w-full">
+            <p class="text-[#808080] text-[24px] font-bold mt-0 font-['Montserrat',_sans-serif]">Segera Berakhir dalam</p>
+          </div>
+          <div id="countdown" class="flex sm:w-full justify-center items-center lg:w-1/3 md:w-1/3 p-4">
+            
+           </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="kisah" class="p-5 my-4 mt-20">
+  <div class="container mx-auto">
+      <div class="px-5 mx-auto">
+          <h3 class="text-center sm:text-[16px] md:text-[24px] lg:text-[24px] leading-[19px] lg:leading-[24.38px] h-[20px] 2xl:text-[24px] font-bold">
+              Ini beberapa Perubahan Luar Biasa dari Member2 yang sudah Gabung...
+          </h3>
+      </div>
+      <div class="w-[92%] 2xl:w-[1260px] lg:w-[855px] mx-auto mt-10">
+          <div class="swiffy-slider slider-item-show2 slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-item-last-visible">
+              <div class="slider-container" style="padding-bottom: 24px;">
+                  <div class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px] drop-shadow-lg">
+                      <div class="bg-white rounded-[20px] py-7 px-7 w-full h-full mx-auto">
+                          <div class="flex w-full gap-2 mx-auto">
+                              <div class="lg:w-auto">
+                                  <div class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]">
+                                      <img src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Vivia.jpg" class="float-left object-center w-full rounded-full" alt="Photo Profile">
+                                  </div>
+                              </div>
+                              <div class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto">
+                                  <h3 class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]">Member Name</h3>
+                                  <span class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]">@username</span>
+                                  <div class="w-full mt-0 2xl:mt-5">
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                  </div>
+                                  <p class="my-5 lg:mt-1 text-slate-600 2xl:text-[27px] lg:text-[16px] hidden lg:block">
+                                      <span class="text-short">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah...
+                                      </span>
+                                      <span class="text-full" style="display: none;">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah itu panen sampai Jutaan Views dan followers meningkat hingga 100,000 followers dalam 6 bulan. Terimakasih ilmunya Ci Vicky dan team 🔥
+                                          <br><br>
+                                          <a class="text-primary" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                                      </span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="lg:mt-10">
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin sem...
+                              </p>
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full" style="display: none;">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin semangat ngonten lagi setelah nonton video Ci Vicky. Awal mulai posting di tiktok duluan eh malah di IG jadi ngelebihin followers di tiktok. Makasih Ci Vicky dan Team 🔥🔥🔥
+                              </p>
+                              <a class="text-primary lg:hidden" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                              <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[450.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"></div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px] drop-shadow-lg">
+                      <div class="bg-white rounded-[20px] py-7 px-7 w-full h-full mx-auto">
+                          <div class="flex w-full gap-2 mx-auto">
+                              <div class="lg:w-auto">
+                                  <div class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]">
+                                      <img src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Vivia.jpg" class="float-left object-center w-full rounded-full" alt="Photo Profile">
+                                  </div>
+                              </div>
+                              <div class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto">
+                                  <h3 class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]">Member Name</h3>
+                                  <span class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]">@username</span>
+                                  <div class="w-full mt-0 2xl:mt-5">
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                  </div>
+                                  <p class="my-5 lg:mt-1 text-slate-600 2xl:text-[27px] lg:text-[16px] hidden lg:block">
+                                      <span class="text-short">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah...
+                                      </span>
+                                      <span class="text-full" style="display: none;">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah itu panen sampai Jutaan Views dan followers meningkat hingga 100,000 followers dalam 6 bulan. Terimakasih ilmunya Ci Vicky dan team 🔥
+                                          <br><br>
+                                          <a class="text-primary" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                                      </span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="lg:mt-10">
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin sem...
+                              </p>
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full" style="display: none;">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin semangat ngonten lagi setelah nonton video Ci Vicky. Awal mulai posting di tiktok duluan eh malah di IG jadi ngelebihin followers di tiktok. Makasih Ci Vicky dan Team 🔥🔥🔥
+                              </p>
+                              <a class="text-primary lg:hidden" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                              <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[450.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"></div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px] drop-shadow-lg">
+                      <div class="bg-white rounded-[20px] py-7 px-7 w-full h-full mx-auto">
+                          <div class="flex w-full gap-2 mx-auto">
+                              <div class="lg:w-auto">
+                                  <div class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]">
+                                      <img src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Vivia.jpg" class="float-left object-center w-full rounded-full" alt="Photo Profile">
+                                  </div>
+                              </div>
+                              <div class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto">
+                                  <h3 class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]">Member Name</h3>
+                                  <span class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]">@username</span>
+                                  <div class="w-full mt-0 2xl:mt-5">
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                      <i class="fa-solid text-warning fa-star w-[5px] 2xl:w-[10px] 2xl:text-xl mx-1"></i>
+                                  </div>
+                                  <p class="my-5 lg:mt-1 text-slate-600 2xl:text-[27px] lg:text-[16px] hidden lg:block">
+                                      <span class="text-short">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah...
+                                      </span>
+                                      <span class="text-full" style="display: none;">
+                                          Dulu views mentok di ratusan, setelah ikut SYCA pertama kali pecah telor 600,000 views, dan setelah itu panen sampai Jutaan Views dan followers meningkat hingga 100,000 followers dalam 6 bulan. Terimakasih ilmunya Ci Vicky dan team 🔥
+                                          <br><br>
+                                          <a class="text-primary" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                                      </span>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="lg:mt-10">
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin sem...
+                              </p>
+                              <p class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full" style="display: none;">
+                                  Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin semangat ngonten lagi setelah nonton video Ci Vicky. Awal mulai posting di tiktok duluan eh malah di IG jadi ngelebihin followers di tiktok. Makasih Ci Vicky dan Team 🔥🔥🔥
+                              </p>
+                              <a class="text-primary lg:hidden" style="cursor:pointer" onclick="show_full_description(this)">lihat selanjutnya</a>
+                              <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[450.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button type="button" class="slider-nav bg-primary" aria-label="Go left"></button>
+            <button type="button" class="slider-nav bg-primary slider-nav-next" aria-label="Go left"></button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#353535] bottom-0 w-full text-white pb-6 lg:px-10 mt-20">
+    <div class="lg:justify-between lg:flex">
+      <div class="p-5">
+        <a href="https://startyourcontentacademy.com/">
+          <img class="w-[110px] lg:w-[189px] lg:h-[116px]" src="https://startyourcontentacademy.com/assets/img/logo-footer.png" alt="Logo Footer">
+        </a>
+        <p class="mt-5">Helping people build and grow their brand through social media content.</p>
+        <div class="mt-5 md:hidden lg:hidden">
+          <h3>Cara Menggunakan:</h3>
+          <a href="https://startyourcontentacademy.com/instruction" class="pt-3 text-lg">
+            <i class="fa-solid fa-person-chalkboard text-primary"></i> Tutorial
+          </a>
+        </div>
+        <h6 class="mt-5 font-semibold">Whatsapp: +62 813-7419-2252</h6>
+        <h6 class="font-semibold">Email: info@syca.com</h6>
+      </div>
+      <div class="p-5">
+        <h3>Kunjungi Social Media Kami</h3>
+        <div class="flex gap-4 mt-5">
+          <a href="https://www.instagram.com/syca" target="_blank">
+            <img class="h-[50px] w-[50px]" src="https://startyourcontentacademy.com/assets/img/icon/ig.png" alt="Instagram">
+          </a>
+          <a href="https://www.tiktok.com/@syca" target="_blank">
+            <img class="h-[50px] w-[50px]" src="https://startyourcontentacademy.com/assets/img/icon/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+        <div class="hidden mt-5 lg:block">
+          <h3>Cara Menggunakan:</h3>
+          <a href="https://startyourcontentacademy.com/instruction" class="pt-3 text-lg">
+            <i class="fa-solid fa-person-chalkboard text-primary"></i> Tutorial
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous" defer></script>
+  <!-- Custom Scripts -->
+ 
+  <script src="assets/js/script.js"></script> 
+</body>
+</html>
